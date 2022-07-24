@@ -5,8 +5,13 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 img {
   width: 600px;
 }
@@ -16,6 +21,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +30,27 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  gap: 16px;
+}
+.content{
+  flex: 1; /* forgot all about this and it makes this while layout work by making the content make up the full window and pushing everything*/
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+.footer{
+  background-color: #eee;
 }
